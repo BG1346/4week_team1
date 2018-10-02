@@ -1,30 +1,37 @@
 package team1;
 
-/**
- * Hello world!
- *
- */
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure.*;
-import org.springframework.stereotype.*;
-import org.springframework.web.bind.annotation.*;
 
-@Controller
-@EnableAutoConfiguration
+import java.util.Scanner;
+
+
 public class App {
-    @Value("${environment.message}")
-    private String message;
+    public static void main(String[] args) {
+        Scanner scan;
+        scan = new Scanner(System.in);
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World! This is " + message ;
-    }
+        System.out.println("첫번째숫자하나입력");
+        String input = scan.nextLine();
 
-    public static void main(String[] args) throws Exception {
-        System.out.println("test");
-        System.out.println("test2");
-        SpringApplication.run(App.class, args);
+
+        System.out.println("*,/중 하나를 입력하세요");
+        String input4 = scan.nextLine();
+
+        System.out.println("두번째숫자하나입력");
+        String input2 = scan.nextLine();
+
+        int num = Integer.parseInt(input);
+        int num2 = Integer.parseInt(input2);
+
+
+        if(input4.equals("*")){
+            int result = num * num2;
+            System.out.println("두 수의 곱은"+result);
+        }
+        else if(input4.equals("/")){
+            int result = num / num2;
+            System.out.println("두 수의 나누기는"+result);
+        }
+
     }
 }
+
