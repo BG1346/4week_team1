@@ -19,11 +19,11 @@ public class App {
 	int num2 = input.nextInt();
 
 	
-	   if(operator.equals("-")){
+	   if(operator == '-'){
 	   int result = num1 - num2;
 	   System.out.println("두 수의 빼기는"+result);
 	  }
-	  else if(operator.equals("+")){
+	  else if(operator == '+'){
 	   int result = num1 + num2;
 	   System.out.println("두 수의 합은"+result);
 	  }
