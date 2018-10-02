@@ -1,30 +1,12 @@
 package team1;
 
-/**
- * Hello world!
- *
- */
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure.*;
-import org.springframework.stereotype.*;
-import org.springframework.web.bind.annotation.*;
-
-@Controller
-@EnableAutoConfiguration
 public class App {
-    @Value("${environment.message}")
-    private String message;
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World! This is " + message ;
-    }
-
-    public static void main(String[] args) throws Exception {
-        System.out.println("test");
-        System.out.println("test2");
-        SpringApplication.run(App.class, args);
+    public static void main(String[] args) {
+        User user1 = new User();
+        user1.setName("jason");
+        user1.setAge(29);
+        user1.setYears("senior");
+        System.out.println(user1.getName()+" "+user1.getAge()+" "+user1.getYears());
     }
 }
