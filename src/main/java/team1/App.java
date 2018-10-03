@@ -20,8 +20,8 @@ public class App {
       result = num1 - num2;
       System.out.println("두 수의 뺄셈은"+num1+"-"+num2+"="+result);
       result = num1 * num2;
-      System.out.println("두 수의 곱셈은"+num1+"*"+num2+"="result);
-      reulst = num1 / num2;
+      System.out.println("두 수의 곱셈은"+num1+"*"+num2+"="+result);
+      result = num1 / num2;
       System.out.println("두 수의 나눗셈은"+num1+"/"+num2+"="+result);
     }
 }
