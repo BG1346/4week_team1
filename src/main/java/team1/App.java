@@ -22,5 +22,13 @@ public class App {
 	   System.out.println("두 수의 빼기는"+num1+"+"+num2+"="+result);
 	   result = num1 - num2;
 	   System.out.println("두 수의 합은"+num1+"-"+num2+"="+result);
+     if(input4.equals("*")){
+          int result = num * num2;
+          System.out.println("두 수의 곱은"+result);
+      }
+      else if(input4.equals("/")){
+          int result = num / num2;
+          System.out.println("두 수의 나누기는"+result);
     }
 }
+
