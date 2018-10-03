@@ -23,6 +23,11 @@ public class App {
       System.out.println("두 수의 곱셈은"+num1+"*"+num2+"="+result);
       result = num1 / num2;
       System.out.println("두 수의 나눗셈은"+num1+"/"+num2+"="+result);
+      result = num % num2;
+      System.out.println("두 수를 나눈 나머지는"+num1+"%"+num2+"="+result);
+
+
+
     }
 }
 
