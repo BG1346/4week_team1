@@ -6,9 +6,9 @@
 
 ## HOW TO UP TO DATE YOUR GIT FROM MAIN GIT
 
-'''       
+```         
 	$git remote add upstream git's address to catch with     
 	$git fetch upstream       
 	$git checkout master     
 	$git merge upstream/master      
-'''      
+```            
