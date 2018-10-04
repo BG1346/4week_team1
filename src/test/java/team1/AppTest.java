@@ -1,20 +1,14 @@
 package team1;
-
-import static org.junit.Assert.assertTrue;
-
+import java.util.Scanner;
 import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
+import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+public class AppTest {
     /**
-     * Rigorous Test :-)
+     * Unit test for simple App.
      */
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void shouldAnswerWithTrue() {
+        assertTrue(true);
     }
 }
